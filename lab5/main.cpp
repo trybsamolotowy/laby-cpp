@@ -11,9 +11,9 @@ namespace moj_prostokat{
 int main(){
 
 
-int zmienna = 2; // This is a simple initialization of a variable with a value of 2.
-int zmienna2(2); // This is a function declaration for a function named `zmienna2` that takes an integer argument with a default value of 2. It is not a variable declaration.
-int zmienna3{2}; // This is a uniform initialization of a variable with a value of 2. It is a C++11 feature that provides a more consistent way of initializing variables.
+int zmienna = 2; // jest deklarowana paiec a potem dopisywana jest wartosc// This is a simple initialization of a variable with a value of 2.
+int zmienna2(2); // jest wywolywany konstruktor do dopisania// This is a function declaration for a function named `zmienna2` that takes an integer argument with a default value of 2. It is not a variable declaration.
+int zmienna3{2}; // od razu przypisujemy wartosc // This is a uniform initialization of a variable with a value of 2. It is a C++11 feature that provides a more consistent way of initializing variables.
 int zmienna4 = {2}; // This is a copy-list-initialization of a variable with a value of 2. It is also a C++11 feature that provides a more consistent way of initializing variables.
 
 std::cout << zmienna << std::endl;
