@@ -128,8 +128,18 @@ int main(){
     if (lat > 2024){
         cout << "Bledna data urodzenia." << endl;
     } else{
-        cout << "Wiek: " << r << " lat." << endl;
+        cout << "Wiek: " << r << " lat" << endl;
     }
+
+    string miejscepracy;
+    
+
+    Pracownik pracownikJulia(miejscepracy);
+    pracownikJulia.miejsce();
+
+    student studentJulia(42990282);
+    studentJulia.indeks();
+
 
 
   return 0;
