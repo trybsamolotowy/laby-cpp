@@ -1,0 +1,59 @@
+what i sent + end it
+
+W ramach pierwszych zajęć sprawdzony zostanie poziom wiedzy uczestników kursu.
+
+Należy rozwiązać i dołączyć do zadania odpowiedzi (kody źródłowe) programów rozwiązujących następujące problemy:
+
+1.	Napisz program obliczający równanie kwadratowe (może być od razu jeden program):
+
+•	zmienne a, b, c zadeklarowane wewnątrz programu,
+
+•	zmienne a, b, c podane przez użytkownika (z klawiatury),
+
+•	zmienne a, b, c podane przez użytkownika (z klawiatury) i wyznaczenie liczby rozwiązań (wartość delty) przy użyciu instrukcji if.
+
+2.	Napisz program wyświetlający kwadraty pierwszych dziesięciu liczb przy użyciu:
+
+•	pętli for,
+
+•	pętli while,
+
+•	pętli do-while.
+
+3.	Zadeklaruj 10-elementową tablicę i za pomocą pętli for – uzupełnij elementy tablicy kwadratami kolejnych liczb naturalnych
+
+4.	Za pomocą pętli while wypełnij elementy tablicy liczbami parzystymi(w tym zero).
+
+5.	Napisz program, który pozwoli Ci wpisać imię, nazwisko (zadeklaruj tablice znaków), wiek. Następnie wyświetl te dane na ekranie.
+
+6.	Na podstawie zadań z poprzednich zajęć zdefiniuj własną funkcję do obliczania wartość delty. Zmodyfikuj program, używając zapisanej funkcji do obliczania pierwiastka kwadratowego. Argumentami funkcji „delta” powinny być współczynniki a, b, c. Umieść swoją funkcję delta:
+
+•	w programie funkcja kwadratowa: int delta(float a, float b, float c).
+
+•	w osobnym pliku nagłówkowym (funkcja biblioteczna), np. delta.h
+
+7.	Napisz program, który do tablicy:
+
+•	zapisuje liczby nieparzyste z przedziału [1; 100].
+
+•	zapisuje liczby podzielne przez 5 z przedziału [1; 50] (wykorzystaj instrukcję continue).
+
+•	zapisuje sumę elementów tablicy: int suma_tablicy [] = {5,2,4,6,1,0, -20,10,20}.
+
+•	całą tablicę znaków ASCII.
+
+8.	Napisz programy służący do obliczania sumy wszystkich liczb naturalnych podzielnych przez 5 lub 3. Program powinien obliczać sumę, aż do liczby zadanej przez użytkownika.
+
+9.	Napisz program posiadający dwie funkcjonalności do wyboru:
+
+•	wyznaczający największy wspólny dzielnik,
+
+•	wyznaczający najmniejszą wspólną wielokrotność.
+
+10.	Napisz program wyznaczający największą liczbę pierwszą, mniejszą od liczby podanej przez użytkownika.
+
+11.	Napisz program wyświetlający wszystkie pary liczby zaprzyjaźnionych mniejszych od 500 tysięcy.
+
+12.	Napisz program wyznaczający liczbę pi (do 2 miejsc dziesiętnych).
+
+13.	Napisz program, który wyznacza czynniki pierwsze liczby wprowadzonej z klawiatury
