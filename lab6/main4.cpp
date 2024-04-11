@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -12,6 +13,7 @@ class Wektor {
     public:
 
     Wektor(float zmienna1, float zmienna2, float zmienna3) : x(zmienna1), y(zmienna2), z(zmienna3) {}
+   
 
     Wektor dodawanie(const Wektor &drugi_wektor)const{
 
@@ -31,7 +33,15 @@ class Wektor {
 
     }
 
+    Wektor dzielenie(int skalar){
 
+        return Wektor(x/skalar,y/skalar,z/skalar);
+    }
+
+    float dlugosc_wektora() const {
+
+        return sqrt(x * x + y * y + z * z);
+    }
 
     void display(){
         
@@ -45,10 +55,6 @@ int main(){
 
     Wektor wektor1(2,2,2);
     Wektor wektor2(1,1,1);
-    Wektor wektor3 = wektor1.dodawanie(wektor2);
-    wektor3.display();
-
-    
-
-
+    cout <<wektor1.dlugosc_wektora();
+     
 }

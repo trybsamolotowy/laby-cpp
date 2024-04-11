@@ -140,8 +140,6 @@ int main(){
     student studentJulia(42990282);
     studentJulia.indeks();
 
-
-
   return 0;
 
 }
