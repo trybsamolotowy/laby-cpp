@@ -2,40 +2,51 @@
 #include <fstream>
 #include <vector>
 #include <cmath>
-#include <algorithm>
 
 using namespace std;
 
 
+void rownanie_kwadratowe(int a, int b, int c, ostream& out){
+    float delta = b*b - 4* a * c;
+    out << "Rownanie: " << a << "x^2 + " << b << "x + " << c << " = 0\n";
+    if(delta > 0){
+        float x1 = (-b + sqrt(delta)) / (2*a);
+        float x2 = (-b - sqrt(delta)) / (2*a);
+        out << "x1 = " << x1 << endl;
+        out << "x2 = " << x2 << endl;
+    }else if (delta == 0){
+        float x = -b / (2*a);
+        out << "x = " << x << endl;
+    }else{
+        out << "Delta mniejsza niz 0." << endl;
+    }
+    out << endl;
+}
+
 int main(){
+    fstream inputFile("plik.txt");
+    fstream outputFile("wynik.txt");
 
-fstream plik;
+    if(!inputFile){
+        cerr << "Unable to open input file" << endl;
+    }
 
-plik.open("plik.txt");
+    if(!outputFile){
+        cerr << "Unable to open output file" << endl;
+    }
 
-if(!plik){
-    cout << "Nie udalo sie otworzyc pliku" << endl;
-}
+    vector<vector<int>> zmienne;
+    int a, b, c;
 
-vector <int> liczba(9);
+    while(inputFile >> a >> b >> c){
+        zmienne.push_back({a, b, c});
+    }
 
-for (int i = 0; i < liczba.size(); i++)
-{
-    plik >> liczba[i];
-    cout << liczba[i];
+    for(const auto& zmienna : zmienne){
+        rownanie_kwadratowe(zmienna[0], zmienna[1], zmienna[2], cout);
+        rownanie_kwadratowe(zmienna[0], zmienna[1], zmienna[2], outputFile);
+    }
 
-    
-
-}
-
-int a = 0, b = 0, c = 0;
-
-for (int i = 0; i < 3; i++){
-    liczba[i] = a;
-    liczba[i+1] = b;
-    liczba[i+2] = c;
-    cout << "a = " << a << " b = " << b << " c = " << c << endl;
-}
-
-
+    inputFile.close();
+    outputFile.close();
 }
