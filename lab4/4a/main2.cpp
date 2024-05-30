@@ -1,23 +1,29 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <sstream>
-using namespace std;
+#include <iostream>     
+#include <fstream>  
+#include <string>       
+#include <sstream>      
 
 int main() {
-    fstream f( "tekst.txt");
-    if(f.is_open()){
-        string linia;
-        int liczba_slow = 0;
+  std::ifstream inputFile("tekst.txt"); 
+
+  if (inputFile.is_open()) {  
+    std::string line;         
+    int wordCount = 0;       
+
+    while (std::getline(inputFile, line)) {
+      std::stringstream ss(line);  
+      std::string word;  
+
+      while (ss >> word) {  
+        wordCount++;  
+      }
     }
 
-    while(getline(f, linia)){
-        liczba_slow++;
-    }
+    inputFile.close(); 
+    std::cout << "Number of words in the said file: " << wordCount << std::endl;  
+    } else {
+    std::cout << "Failed to open the file." << std::endl; 
+  }
 
-    f.close();
-
-    cout << "Liczba slow wynosi " << liczba_slow << endl;
-    
-    return 0;
+  return 0;
 }

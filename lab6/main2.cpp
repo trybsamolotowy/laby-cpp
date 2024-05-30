@@ -2,14 +2,6 @@
 #include <cmath>
 #include <locale>
 
-/*
-
-Napisz klasę "Figura", która będzie miała pole (np. protected) związane z wymiarami figur
-(np. długość boku kwadratu, promień koła, wysokość trójkąta). Stwórz dziedziczące z niej
-klasy dla konkretnych figur, takich jak kwadrat, koło czy trójkąt. Napisz metody, które
-umożliwią obliczanie pola i obwodu każdej z tych figur.
-
-*/
 using namespace std;
 
 class figura{

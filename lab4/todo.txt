@@ -1,4 +1,0 @@
-
-Napisz program rozwiązujący kilka równań kwadratowych, dane powinny być wczytywane z pliku, a wyniki wyprowadzane na ekran i do pliku.
-Napisz program zliczający słowa i czarne znaki w pliku.
-Napisz program, który we wskazanym pliku zamieni pierwsze litery wyrazów na wielkie, a wynik umieści w nowym pliku.

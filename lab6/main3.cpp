@@ -3,13 +3,6 @@
 
 using namespace std;
 
-/*
-Stwórz klasę "Człowiek", która będzie miała prywatne pola związane z imieniem,
- nazwiskiem i datą urodzenia. Napisz metody, które umożliwią ustawianie i pobieranie 
- tych pól oraz obliczanie wieku osoby. Następnie stwórz dziedziczące z niej klasy 
- "Student" i "Pracownik", które będą miały dodatkowe pola związane z numerem indeksu
- lub miejscem pracy, odpowiednio.
-*/
 class Czlowiek {
     private:
 
