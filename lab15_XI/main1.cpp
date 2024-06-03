@@ -1,3 +1,5 @@
+// https://github.com/trybsamolotowy/laby-cpp/tree/main/lab15_XI
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
